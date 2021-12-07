@@ -29,4 +29,8 @@ public class ReservationController {
         ReservationStatusDto reservationStatusDto = new ReservationStatusDto(List.of(reservationDto));
         return ResponseEntity.ok(reservationStatusDto);
     }
+    @DeleteMapping("/{reservation-id}")
+    public ResponseEntity<Void> deleteReservation(@RequestHeader("Access-Token") String token, @PathVariable("reservation-id") Integer reservationId ) {
+        return ResponseEntity.ok().build();
+    }
 }
