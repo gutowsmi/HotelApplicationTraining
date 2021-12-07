@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class RoomDto {
     private Integer id;
-    private Integer beds;
+    private String beds;
     private BigDecimal price;
 
     public RoomDto() {
@@ -18,11 +18,11 @@ public class RoomDto {
         this.id = id;
     }
 
-    public Integer getBeds() {
+    public String getBeds() {
         return beds;
     }
 
-    public void setBeds(Integer beds) {
+    public void setBeds(String beds) {
         this.beds = beds;
     }
 
@@ -34,7 +34,7 @@ public class RoomDto {
         this.price = price;
     }
 
-    public RoomDto(Integer id, Integer beds, BigDecimal price) {
+    public RoomDto(Integer id, String beds, BigDecimal price) {
         this.id = id;
         this.beds = beds;
         this.price = price;

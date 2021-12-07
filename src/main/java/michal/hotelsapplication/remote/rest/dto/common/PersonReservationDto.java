@@ -2,14 +2,14 @@ package michal.hotelsapplication.remote.rest.dto.common;
 
 public class PersonReservationDto {
     private String name;
-    private Integer phone;
+    private String phone;
     private String address;
     private Integer floor;
 
     public PersonReservationDto() {
     }
 
-    public PersonReservationDto(String name, Integer phone, String address, Integer floor) {
+    public PersonReservationDto(String name, String phone, String address, Integer floor) {
         this.name = name;
         this.phone = phone;
         this.address = address;
@@ -24,11 +24,11 @@ public class PersonReservationDto {
         this.name = name;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
